@@ -1,0 +1,15 @@
+with open('input.txt') as f:
+    x=list(eval(f.read()))
+    print('lista1:',x)
+    y=sorted(x)
+    print('lista2:',y)
+    x.sort(reverse=True)
+    print('lista3:',x)
+    print(len(x))
+    print(max(x))
+    print(min(x))
+    x.extend([-111])
+    print('lista4:',x)
+    x.remove(-111)
+    x[2]=-222
+    print(x)
