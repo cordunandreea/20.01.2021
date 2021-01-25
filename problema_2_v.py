@@ -1,0 +1,33 @@
+with open('input.txt') as f:
+    x=list(eval(f.read()))
+    a=x
+    y=sorted(x)
+    b=y
+    x.sort(reverse=True)
+    c=x
+    d=len(x)
+    e=max(x)
+    z=min(x)
+    x.extend([-111])
+    g=x
+    x.remove(-111)
+    x[2]=-222
+    h=x
+with open('output.txt','w') as f:
+    f.write(str(a))
+    f.write(str('\n'))
+    f.write(str(y))
+    f.write(str('\n'))
+    f.write(str(b))
+    f.write(str('\n'))
+    f.write(str(c))
+    f.write(str('\n'))
+    f.write(str(d))
+    f.write(str('\n'))
+    f.write(str(e))
+    f.write(str('\n'))
+    f.write(str(z))
+    f.write(str('\n'))
+    f.write(str(g))
+    f.write(str('\n'))
+    f.write(str(h))
